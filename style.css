@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box; /* Inclui bordas e padding no cálculo da largura */
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    padding: 10px; /* Espaçamento ao redor do menu */
+}
+
+nav ul {
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o preenchimento */
+    margin: 0; /* Remove a margem */
+    display: flex; /* Exibe os itens em linha */
+    flex-wrap: wrap; /* Permite quebra de linha em telas menores */
+}
+
+nav ul li {
+    background-color: #f9e79f; /* Amarelo suave para os itens */
+    border-radius: 10px; /* Bordas arredondadas */
+    margin-right: 20px; /* Espaçamento entre os itens */
+    margin-bottom: 10px; /* Espaçamento entre as linhas em telas menores */
+    padding: 10px 15px; /* Espaçamento interno nos itens */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: black; /* Cor do texto */
+}
+
+nav ul li a:hover {
+    color: blue; /* Cor do texto ao passar o mouse */
+}
+
+main {
+    padding: 20px; /* Espaçamento interno do conteúdo */
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column; /* Muda para coluna em telas pequenas */
+    }
+
+    nav ul li {
+        margin-right: 0; /* Remove o espaçamento à direita */
+    }
+}
